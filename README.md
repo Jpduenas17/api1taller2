@@ -1,4 +1,4 @@
-# Lab1Taller2
+# Api2Taller2
 - Autor: Yenni Paola Dueñas
 - Prerequisitos
 - Como ejecutar la app local
