@@ -26,6 +26,7 @@ def read_user(internalId : str):
         print(usr)
         if usr["internalId"]==internalId:
             return usr
+            
 
 def api2():
     url='https://62fc67e61e6a530698a5ee17.mockapi.io/API2Taller1'
