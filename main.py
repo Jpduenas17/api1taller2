@@ -2,7 +2,7 @@ import requests
 import logging.config
 
 from typing import Union
-from fastapi import FastAPI
+from fastapi import FastAPI, status, Response
 from pydantic import BaseModel
 from prometheus_fastapi_instrumentator import Instrumentator 
 
@@ -26,7 +26,7 @@ def read_user(internalId : str):
         print(usr)
         if usr["internalId"]==internalId:
             return usr
-            
+    return Response(status_code= status.HTTP_204_NO_CONTENT)        
 
 def api2():
     url='https://62fc67e61e6a530698a5ee17.mockapi.io/API2Taller1'
