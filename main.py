@@ -19,7 +19,7 @@ def read_root():
     response = api2()
     return {"AuthUsers": response }
 
-@app.get("/API2Taller1/{internalId}")
+@app.get("/authUsers/{internalId}")
 def read_user(internalId : str):
     list=api2()
     for usr in list:
